@@ -69,56 +69,266 @@
         
         <!-- main -->
         <div class="main">
+            <!-- apply to university -->
             <div class="topbar">
                 <div class="toggle">
                     <ion-icon name="menu-outline"></ion-icon>
                 </div>
-                <!-- search -->
-                <div class="search">
-                    <label>
-                        <input type="text" placeholder="Search Here">
-                        <ion-icon name="search-outline"></ion-icon>
-                    </label>
-                </div>
-                <!-- userImg -->
-                <div class="user">
+                <!-- search
+                    <div class="search">
+                        <label>
+                            <input type="text" placeholder="Search Here">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </label>
+                    </div> -->
+                <!-- <div class="user">
                     <img src="./images/studentProfilePic.jpg" alt="user image">
-                </div>
+                </div> -->
             </div>
+
+            <section id="applyUni" class="applications">
+                <!-- <div class="cardHeader">
+                    <h2>Applicant Info</h2>
+                </div>
+                <form action="" method="post">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                    <input type="text" placeholder="SA ID Number">
+                </form>
+
+                <div class="cardHeader">
+                    <h2>University Info</h2>
+                </div>
+                <form action="" method="post">
+                    <input type="text" placeholder="University Address">
+                    <input type="text" placeholder="University Name">
+
+                </form>
+
+                <div class="cardHeader">
+                    <h2>Course Info</h2>
+                </div>
+                <form action="" method="post">
+                    <input type="text" placeholder="Course ID">
+                    <input type="text" placeholder="Course Name">
+                    <input type="text" placeholder="Semester">
+                </form>
+
+                <button type="submit">Apply</button>
+                <button type="submit">Reset</button> -->
+
+                <header>Apply University</header>
+        <div class="contain">
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" placeholder="Enter birth date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="number" placeholder="Enter mobile number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select required>
+                                <option disabled selected>Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Occupation</label>
+                            <input type="text" placeholder="Enter your ccupation" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Identity Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>ID Type</label>
+                            <input type="text" placeholder="Enter ID type" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>ID Number</label>
+                            <input type="number" placeholder="Enter ID number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Issued Authority</label>
+                            <input type="text" placeholder="Enter issued authority" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Issued State</label>
+                            <input type="text" placeholder="Enter issued state" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Issued Date</label>
+                            <input type="date" placeholder="Enter your issued date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Expiry Date</label>
+                            <input type="date" placeholder="Enter expiry date" required>
+                        </div>
+                    </div>
+
+                    <button class="nextBtn">
+                        <span class="btnText">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div> 
+            </div>
+
+            <div class="form second">
+                <div class="details address">
+                    <span class="title">Address Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Address Type</label>
+                            <input type="text" placeholder="Permanent or Temporary" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Nationality</label>
+                            <input type="text" placeholder="Enter nationality" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>State</label>
+                            <input type="text" placeholder="Enter your state" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>District</label>
+                            <input type="text" placeholder="Enter your district" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Block Number</label>
+                            <input type="number" placeholder="Enter block number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Ward Number</label>
+                            <input type="number" placeholder="Enter ward number" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details family">
+                    <span class="title">Family Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Father Name</label>
+                            <input type="text" placeholder="Enter father name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mother Name</label>
+                            <input type="text" placeholder="Enter mother name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Grandfather</label>
+                            <input type="text" placeholder="Enter grandfther name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Spouse Name</label>
+                            <input type="text" placeholder="Enter spouse name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Father in Law</label>
+                            <input type="text" placeholder="Father in law name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mother in Law</label>
+                            <input type="text" placeholder="Mother in law name" required>
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <div class="backBtn">
+                            <i class="uil uil-navigator"></i>
+                            <span class="btnText">Back</span>
+                        </div>
+                        
+                        <button class="sumbit">
+                            <span class="btnText">Submit</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div>
+                </div> 
+            </div>
+        </form>
+    </div>
+            </section>
 
             <!-- cards -->
             <div class="cardBox">
+                <div class="cardHeader">
+                    <h2>Applicant Info</h2>
+                </div>
                 <div class="card">
                     <div>
                         <div class="numbers">8</div>
-                        <div class="cardName">Total Course Subjects</div>                    
+                        <div class="cardName">First Name</div>                    
                     </div>
-                    <div class="iconBx">
+                    <!-- <div class="iconBx">
                         <ion-icon name="eye-outline"></ion-icon>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="card">
                     <div>
                         <div class="numbers">5</div>
-                        <div class="cardName">Total Subjects Left</div>                    
+                        <div class="cardName">Last Name</div>                    
                     </div>
-                    <div class="iconBx">
+                    <!-- <div class="iconBx">
                         <ion-icon name="eye-outline"></ion-icon>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="card">
                     <div>
-                        <div class="numbers">3</div>
-                        <div class="cardName">Subjects Taken</div>                    
+                        <div class="numbers">3123456789012</div>
+                        <div class="cardName">SA ID Number</div>                    
                     </div>
-                    <div class="iconBx">
+                    <!-- <div class="iconBx">
                         <ion-icon name="eye-outline"></ion-icon>
-                    </div>
+                    </div> -->
                 </div>
 
-                <div class="card">
+                <!-- <div class="card">
                     <div>
                         <div class="numbers">3</div>
                         <div class="cardName">Subjects Passed</div>                    
@@ -126,7 +336,7 @@
                     <div class="iconBx">
                         <ion-icon name="eye-outline"></ion-icon>
                     </div>
-                </div>
+                </div> -->
             </div>
 
             <div class="applications">
