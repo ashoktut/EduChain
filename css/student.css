@@ -214,18 +214,6 @@ body {
     object-fit: cover;
 }
 
-.heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-.heading h2 {
-    font-weight: 600;
-    color: var(--black1);
-    padding-left: 40px;
-}
-
 .cardBox {
     position: relative;
     width: 100%;
@@ -302,7 +290,7 @@ body {
 
 .cardHeader h2 {
     font-weight: 600;
-    color: var(--black1);
+    color: var(--blue);
 }
 
 .btn {
