@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="/css/student.css">
+    <link rel="stylesheet" type="text/css" href="/css/utilities.css">
     <title>EduChain</title>
 </head>
 
@@ -39,7 +40,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#address">
+                    <a href="#accomodation">
                         <span class="icon">
                             <ion-icon name="home-outline"></ion-icon>
                         </span>
@@ -47,7 +48,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#applyFund">
+                    <a href="#applyNsfas">
                         <span class="icon">
                             <ion-icon name="business-outline"></ion-icon>
                         </span>
@@ -55,7 +56,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#studDash">
+                    <a href="#dashboard">
                         <span class="icon">
                             <ion-icon name="stats-chart-outline"></ion-icon>
                         </span>
@@ -85,7 +86,7 @@
                         <div class="main-user-info">
                             <div class="user-input-box">
                                 <label for="fullName">Full Name</label>
-                                <input type="text" placeholder="Enter your name" required />
+                                <input type="text" placeholder="Enter your full name" required />
                             </div>
 
                             <div class="user-input-box">
@@ -105,7 +106,7 @@
 
                             <div class="user-input-box">
                                 <label for="address">Physical Address</label>
-                                <input type="textarea" placeholder="Enter address..." required />
+                                <input type="text" placeholder="Enter address..." required />
                             </div>
 
                             <div class="user-input-box">
@@ -141,129 +142,517 @@
             </section>
 
             <section id="details">
-                <div class="details ID">
-                    <span class="title">Identity Details</span>
+                <div class="form_first">
+                    <h1 class="application-title">Student Registration Form</h1>
+                    <form action="GET" action="">
+                        <h2 class="info-info">Applicant Information</h2>
+                        <div class="main-user-info">
+                            <div class="user-input-box">
+                                <label for="firstName">First Name</label>
+                                <input type="text" placeholder="first name will be retrieved" required />
+                            </div>
 
-                    <div class="fields">
-                        <div class="input-field">
-                            <label>ID Type</label>
-                            <input type="text" placeholder="Enter ID type" required>
+                            <div class="user-input-box">
+                                <label for="lastname">Last Name</label>
+                                <input type="text" placeholder="last name will be retrieved" required />
+                            </div>
+
+                            <div class="user-input-box">
+                                <label for="idnumber">SA ID number</label>
+                                <input type="text" placeholder="idnumber will be retrieved" required />
+                            </div>
+
                         </div>
 
-                        <div class="input-field">
-                            <label>ID Number</label>
-                            <input type="number" placeholder="Enter ID number" required>
+                        <h2 class="registration-info">Registration Information</h2>
+                        <div class="user-input-box">
+                            <label for="mobileNumber">Mobile Number</label>
+                            <input type="text" placeholder="will be retrieved" required />
                         </div>
 
-                        <div class="input-field">
-                            <label>Issued Authority</label>
-                            <input type="text" placeholder="Enter issued authority" required>
+                        <div class="user-input-box">
+                            <label for="address">Physical Address</label>
+                            <input type="textarea" placeholder="will be retrieved" required />
                         </div>
 
-                        <div class="input-field">
-                            <label>Issued State</label>
-                            <input type="text" placeholder="Enter issued state" required>
+                        <h2 class="registration-info">Course Information</h2>
+                        <div class="user-input-box">
+                            <label for="totSubjects">Total Modules</label>
+                            <input type="text" placeholder="will be retrieved" required />
                         </div>
 
-                        <div class="input-field">
-                            <label>Issued Date</label>
-                            <input type="date" placeholder="Enter your issued date" required>
+                        <div class="user-input-box">
+                            <label for="courseCode">Course Code</label>
+                            <input type="textarea" placeholder="will be retrieved" required />
                         </div>
 
-                        <div class="input-field">
-                            <label>Expiry Date</label>
-                            <input type="date" placeholder="Enter expiry date" required>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
-
-            <section id="address">
-                <div class="details address">
-                    <span class="title">Address Details</span>
-
-                    <div class="fields">
-                        <div class="input-field">
-                            <label>Address Type</label>
-                            <input type="text" placeholder="Permanent or Temporary" required>
+                        <div class="user-input-box">
+                            <label for="courseName">Course Name</label>
+                            <input type="textarea" placeholder="will be retrieved" required />
                         </div>
 
-                        <div class="input-field">
-                            <label>Nationality</label>
-                            <select name="Nationality" id="nationality">
-                                <option value="Afghan">Afghan</option>
-                                <option value="Albanian">Albanian</option>
-                                <option value="Algerian">Algerian</option>
-                                <option value="American">American</option>
-                                <option value="Andorran">Andorran</option>
-                                <option value="Angolan">Angolan</option>
-                                <option value="Anguillan">Anguillan</option>
-                                <option value="Argentine">Argentine</option>
-                                <option value="Australian">Australian</option>
-                                <option value="Austrian">Austrian</option>
-                                <option value="Bahamian">Bahamian</option>
-                                <option value="Botswanan">Botswanan</option>
-                                <option value="Cambodian">Cambodian</option>
-                                <option value="Danish">Danish</option>
-                                <option value="East Timorese">East Timorese</option>
-                                <option value="Faroese">Faroese</option>
-                                <option value="Gabonese">Gabonese</option>
-                                <option value="Haitian">Haitian</option>
-                                <option value="Icelandic">Icelandic</option>
-                                <option value="Jamaican">Jamaican</option>
-                                <option value="Kenyan">Kenyan</option>
-                                <option value="Liberian">Liberian</option>
-                                <option value="Macedonian">Macedonian</option>
-                                <option value="Mexican">Mexican</option>
-                                <option value="Namibian">Namibian</option>
-                                <option value="Pakistani">Pakistani</option>
-                                <option value="Qatari">Qatari</option>
-                                <option value="Russian">Russian</option>
-                                <option value="South African">South African</option>
-                                <option value="Swedish">Swedish</option>
-                                <option value="Tanzanian">Tanzanian</option>
-                                <option value="Ukrainian">Ukrainian</option>
-                                <option value="Uruguayan">Uruguayan</option>
-                                <option value="Venezuelan">Venezuelan</option>
-                                <option value="Wallisian">Wallisian</option>
-                                <option value="Zambian">Zambian</option>
-                                <option value="Zimbabwean">Zimbabwean</option>
+                        <div class="select-option">
+                            <label for="semester">Semester</label>
+                            <select name="semester" id="">
+                                <option value="First">None</option>
+                                <option value="First">First</option>
+                                <option value="Second">Second</option>
+                                <option value="Third">Third</option>
+                                <option value="Fourth">Fourth</option>
                             </select>
                         </div>
 
-                        <div class="input-field">
-                            <label>State</label>
-                            <input type="text" placeholder="Enter your state" required>
+                        <div class="form-submit-btn">
+                            <input type="submit" value="Register">
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section id="accomodation">
+                <div class="form_first">
+                    <h1 class="application-title">Student Accomodation Application Form</h1>
+                    <form action="GET" action="">
+                        <h2 class="info-info">Applicant Information</h2>
+                        <div class="main-user-info">
+                            <div class="user-input-box">
+                                <label for="firstName">First Name</label>
+                                <input type="text" placeholder="first name will be retrieved" required />
+                            </div>
+
+                            <div class="user-input-box">
+                                <label for="lastname">Last Name</label>
+                                <input type="text" placeholder="last name will be retrieved" required />
+                            </div>
+
+                            <div class="user-input-box">
+                                <label for="idnumber">SA ID number</label>
+                                <input type="text" placeholder="idnumber will be retrieved" required />
+                            </div>
+
+
                         </div>
 
-                        <div class="input-field">
-                            <label>District</label>
-                            <input type="text" placeholder="Enter your district" required>
+                        <h2 class="registration-info">Accomodation Information</h2>
+                        <div class="user-input-box">
+                            <label for="mobileNumber">Accomodation Address</label>
+                            <select>
+                                <option value="arcadia_res">Arcadia Res</option>
+                                <option value="main_campus_res">Main campus Res</option>
+                                <option value="sunnyside_res">Sunnyside Res</option>
+                                <option value="junction_res">Junction Res</option>
+                                <option value="sosha_south_res">Soshanguve south Res</option>
+                                <option value="sosha_north_res">Soshanguve North Res</option>
+                            </select>
                         </div>
 
-                        <div class="input-field">
-                            <label>Block Number</label>
-                            <input type="number" placeholder="Enter block number" required>
+                        <div class="user-input-box">
+                            <label for="amount">Amount</label>
+                            <input type="text" placeholder="will be retrieved" required />
                         </div>
 
-                        <div class="input-field">
-                            <label>Ward Number</label>
-                            <input type="number" placeholder="Enter ward number" required>
+                        <div class="form-submit-btn">
+                            <input type="submit" value="Apply">
+                        </div>
+
+            </section>
+
+            <section id="applyNsfas"><!---apply nsfas section opening-->
+                <div class="form_first">
+                    <h1 class="application-title">NSFAS Application Form</h1>
+                    <form action="GET" action="">
+                        <h2 class="info-info">Applicant Information</h2>
+                        <div class="main-user-info">
+                            <div class="user-input-box">
+                                <label for="firstName">First Name</label>
+                                <input type="text" placeholder="first name will be retrieved" required />
+                            </div>
+
+                            <div class="user-input-box">
+                                <label for="lastname">Last Name</label>
+                                <input type="text" placeholder="last name will be retrieved" required />
+                            </div>
+
+                            <div class="user-input-box">
+                                <label for="idnumber">SA ID number</label>
+                                <input type="text" placeholder="idnumber will be retrieved" required />
+                            </div>
+
+
+                        </div>
+
+                        <h2 class="registration-info">Accomodation Information</h2>
+                        <div class="user-input-box">
+                            <label for="mobileNumber">Accomodation Address</label>
+                            <select>
+                                <option value="arcadia_res">Arcadia Res</option>
+                                <option value="main_campus_res">Main campus Res</option>
+                                <option value="sunnyside_res">Sunnyside Res</option>
+                                <option value="junction_res">Junction Res</option>
+                                <option value="sosha_south_res">Soshanguve south Res</option>
+                                <option value="sosha_north_res">Soshanguve North Res</option>
+                            </select>
+                        </div>
+
+                        <div class="user-input-box">
+                            <label for="amount">Amount</label>
+                            <input type="text" placeholder="will be retrieved" required />
+                        </div>
+
+                        <div class="form-submit-btn">
+                            <input type="submit" value="Apply">
+                        </div>
+
+            </section><!---apply nsfas section closing-->
+
+            <section id="dashboard">
+                <!---opening for section dashboard-->
+                <div class="topbar">
+                   
+                    <!-- search -->
+                    <div class="search">
+                        <label>
+                            <input type="text" placeholder="Search Here">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </label>
+                    </div>
+                    <!-- userImg -->
+                    <div class="user">
+                        <img src="./images/studentProfilePic.jpg" alt="user image">
+                    </div>
+                </div>
+
+                <div class="heading">
+                    <h2>ACADEMICS</h2>
+                </div>
+
+                <div class="cardBox">
+                    <div class="card">
+                        <div>
+                            <div class="numbers">Blockchain</div>
+                            <div class="cardName">Course Name</div>
+                        </div>
+                        <div class="iconBx">
+                            <ion-icon name="school-outline"></ion-icon>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div>
+                            <div class="numbers">8</div>
+                            <div class="cardName">Total Course Subjects</div>
+                        </div>
+                        <!-- <div class="iconBx">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div> -->
+                    </div>
+
+
+                    <div class="card">
+                        <div>
+                            <div class="numbers">3</div>
+                            <div class="cardName">Subjects Taken</div>
+                        </div>
+                        <!-- <div class="iconBx">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div> -->
+                    </div>
+
+                    <div class="card">
+                        <div>
+                            <div class="numbers">3</div>
+                            <div class="cardName">Subjects Passed</div>
+                        </div>
+                        <!-- <div class="iconBx">
+                            <ion-icon name="eye-outline"></ion-icon>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="heading">
+                    <h2>STUDENT INFO</h2>
+                </div>
+
+                <!-- cards -->
+                <div class="cardBox">
+                    <div class="card">
+                        <div>
+                            <div class="numbers">9901024654253</div>
+                            <div class="cardName">SA ID Number</div>
+                        </div>
+                        <!-- <div class="iconBx">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div> -->
+                    </div>
+
+                    <div class="card">
+                        <div>
+                            <div class="numbers">Laura</div>
+                            <div class="cardName">Name</div>
+                        </div>
+                        <!-- <div class="iconBx">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div> -->
+                    </div>
+
+                    <div class="card">
+                        <div>
+                            <div class="numbers">Ndlovu</div>
+                            <div class="cardName">Surname</div>
+                        </div>
+                        <!-- <div class="iconBx">
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </div> -->
+                    </div>
+
+                    <div class="card">
+                        <div>
+                            <div class="numbers">100 %</div>
+                            <div class="cardName">Pass Rate</div>
+                        </div>
+                        <div class="iconBx">
+                            <ion-icon name="trending-up-outline"></ion-icon>
                         </div>
                     </div>
                 </div>
 
+                <div class="applications">
+                    <!-- student application list -->
+                    <div class="recentApplications">
+                        <div class="cardHeader">
+                            <h2>PAYMENTS INFO</h2>
+                        </div>
 
-            </section>
+                        <!-- cards -->
+                        <div class="cardBox">
+                            <div class="card">
+                                <div>
+                                    <div class="numbers">1500</div>
+                                    <div class="cardName">Monthly Fund</div>
+                                </div>
+                            </div>
 
+                            <div class="card">
+                                <div>
+                                    <div class="numbers">5000</div>
+                                    <div class="cardName">Book Fund</div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div>
+                                    <div class="numbers">12000</div>
+                                    <div class="cardName">Rent Fund</div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div>
+                                    <div class="numbers">15000</div>
+                                    <div class="cardName">Fees Fund</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cardHeader">
+                            <a href="#" class="btn">Admit</a>
+                            <a href="#" class="btn">Register</a>
+                            <a href="#" class="btn">Get Fees</a>
+                        </div>
+                    </div>
+
+                    <!-- New Students -->
+                    <div class="recentStudents">
+                        <div class="cardHeader">
+                            <h2>ELIGIBLE STUDENTS</h2>
+                        </div>
+                        <table>
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx">
+                                        <img src="./images/studentProfilePic.jpg" alt="Student List">
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <h4>
+                                        Laura<br><span>Ndlovu</span>
+                                    </h4>
+                                </td>
+
+                                <td>
+                                    <div class="iconBx">
+                                        <ion-icon name="mail-outline"></ion-icon>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx">
+                                        <img src="./images/studentProfilePic.jpg" alt="Student List">
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <h4>
+                                        Laura<br><span>Ndlovu</span>
+                                    </h4>
+                                </td>
+
+                                <td>
+                                    <div class="iconBx">
+                                        <ion-icon name="mail-outline"></ion-icon>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx">
+                                        <img src="./images/studentProfilePic.jpg" alt="Student List">
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <h4>
+                                        Laura<br><span>Ndlovu</span>
+                                    </h4>
+                                </td>
+
+                                <td>
+                                    <div class="iconBx">
+                                        <ion-icon name="mail-outline"></ion-icon>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx">
+                                        <img src="./images/studentProfilePic.jpg" alt="Student List">
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <h4>
+                                        Laura<br><span>Ndlovu</span>
+                                    </h4>
+                                </td>
+
+                                <td>
+                                    <div class="iconBx">
+                                        <ion-icon name="mail-outline"></ion-icon>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx">
+                                        <img src="./images/studentProfilePic.jpg" alt="Student List">
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <h4>
+                                        Laura<br><span>Ndlovu</span>
+                                    </h4>
+                                </td>
+
+                                <td>
+                                    <div class="iconBx">
+                                        <ion-icon name="mail-outline"></ion-icon>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width="60px">
+                                    <div class="imgBx">
+                                        <img src="./images/studentProfilePic.jpg" alt="Student List">
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <h4>
+                                        Laura<br><span>Ndlovu</span>
+                                    </h4>
+                                </td>
+
+                                <td>
+                                    <div class="iconBx">
+                                        <ion-icon name="mail-outline"></ion-icon>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Student History -->
+                    <div class="recentStudents">
+                        <div class="cardHeader">
+                            <h2>STUDENT HISTORY</h2>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>Process</td>
+                                    <td>Transaction Hash</td>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>Applied_Uni</td>
+                                    <td>0x245gef53tgvdGG</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Admitted</td>
+                                    <td>0x7db55jddk68nU5</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Registered</td>
+                                    <td>0xR3VDGjddk6VS46</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Paid_Monthly</td>
+                                    <td>0xndbe3lkj4sSDH35</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Paid_Books</td>
+                                    <td>0xKDee88vj4sSJ86G</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Paid_Rent</td>
+                                    <td>0xndXf89lSS4sSmME</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Paid_Fees</td>
+                                    <td>0xndbe3lkj4sSDHSa3</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Eligible</td>
+                                    <td>0xndbe3lkj4sSDH346</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
         </div>
-        <!----closing for the main div-->
 
+        </section>
+        <!---closing for section dashboard-->
 
-
-
-
+    </div>
+    <!----closing for the main div-->
 
 
 
