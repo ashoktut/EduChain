@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,13 @@
     <title>Student Portal</title>
     <link rel="stylesheet" type="text/css" href="/css/student.css">
 </head>
+
 <body>
     <div class="container">
         <div class="navigation">
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="index.html">
                         <span class="icon">
                             <ion-icon name="logo-ionic"></ion-icon>
                         </span>
@@ -66,7 +68,7 @@
                 </li>
             </ul>
         </div>
-        
+
         <!-- main -->
         <div class="main">
             <!-- apply to university -->
@@ -87,418 +89,202 @@
             </div>
 
             <section id="applyUni" class="applications">
-                <!-- <div class="cardHeader">
-                    <h2>Applicant Info</h2>
-                </div>
-                <form action="" method="post">
-                    <input type="text" placeholder="First Name">
-                    <input type="text" placeholder="Last Name">
-                    <input type="text" placeholder="SA ID Number">
-                </form>
 
-                <div class="cardHeader">
-                    <h2>University Info</h2>
-                </div>
-                <form action="" method="post">
-                    <input type="text" placeholder="University Address">
-                    <input type="text" placeholder="University Name">
+                <header>Apply University
 
-                </form>
+                    <div class="contain">
+                        <form action="#">
+                            <div class="form first">
+                                <div class="details personal">
+                                    <span class="title">Personal Details</span>
 
-                <div class="cardHeader">
-                    <h2>Course Info</h2>
-                </div>
-                <form action="" method="post">
-                    <input type="text" placeholder="Course ID">
-                    <input type="text" placeholder="Course Name">
-                    <input type="text" placeholder="Semester">
-                </form>
+                                    <div class="fields">
+                                        <div class="input-field">
+                                            <label>Full Name</label>
+                                            <input type="text" placeholder="Enter your name" required>
+                                        </div>
 
-                <button type="submit">Apply</button>
-                <button type="submit">Reset</button> -->
+                                        <div class="input-field">
+                                            <label>Date of Birth</label>
+                                            <input type="date" placeholder="Enter birth date" required>
+                                        </div>
 
-                <header>Apply University</header>
-        <div class="contain">
-        <form action="#">
-            <div class="form first">
-                <div class="details personal">
-                    <span class="title">Personal Details</span>
+                                        <div class="input-field">
+                                            <label>Email</label>
+                                            <input type="text" placeholder="Enter your email" required>
+                                        </div>
 
-                    <div class="fields">
-                        <div class="input-field">
-                            <label>Full Name</label>
-                            <input type="text" placeholder="Enter your name" required>
-                        </div>
+                                        <div class="input-field">
+                                            <label>Mobile Number</label>
+                                            <input type="number" placeholder="Enter mobile number" required>
+                                        </div>
 
-                        <div class="input-field">
-                            <label>Date of Birth</label>
-                            <input type="date" placeholder="Enter birth date" required>
-                        </div>
+                                        <div class="input-field">
+                                            <label>Gender</label>
+                                            <select required>
+                                                <option disabled selected>Select gender</option>
+                                                <option>Male</option>
+                                                <option>Female</option>
+                                                <option>Others</option>
+                                            </select>
+                                        </div>
 
-                        <div class="input-field">
-                            <label>Email</label>
-                            <input type="text" placeholder="Enter your email" required>
-                        </div>
+                                        <div class="input-field">
+                                            <label>Occupation</label>
+                                            <input type="text" placeholder="Enter your ccupation" required>
+                                        </div>
+                                    </div>
+                                </div>
 
-                        <div class="input-field">
-                            <label>Mobile Number</label>
-                            <input type="number" placeholder="Enter mobile number" required>
-                        </div>
+                                <div class="details ID">
+                                    <span class="title">Identity Details</span>
 
-                        <div class="input-field">
-                            <label>Gender</label>
-                            <select required>
-                                <option disabled selected>Select gender</option>
-                                <option>Male</option>
-                                <option>Female</option>
-                                <option>Others</option>
-                            </select>
-                        </div>
+                                    <div class="fields">
+                                        <div class="input-field">
+                                            <label>ID Type</label>
+                                            <input type="text" placeholder="Enter ID type" required>
+                                        </div>
 
-                        <div class="input-field">
-                            <label>Occupation</label>
-                            <input type="text" placeholder="Enter your ccupation" required>
-                        </div>
-                    </div>
-                </div>
+                                        <div class="input-field">
+                                            <label>ID Number</label>
+                                            <input type="number" placeholder="Enter ID number" required>
+                                        </div>
 
-                <div class="details ID">
-                    <span class="title">Identity Details</span>
+                                        <div class="input-field">
+                                            <label>Issued Authority</label>
+                                            <input type="text" placeholder="Enter issued authority" required>
+                                        </div>
 
-                    <div class="fields">
-                        <div class="input-field">
-                            <label>ID Type</label>
-                            <input type="text" placeholder="Enter ID type" required>
-                        </div>
+                                        <div class="input-field">
+                                            <label>Issued State</label>
+                                            <input type="text" placeholder="Enter issued state" required>
+                                        </div>
 
-                        <div class="input-field">
-                            <label>ID Number</label>
-                            <input type="number" placeholder="Enter ID number" required>
-                        </div>
+                                        <div class="input-field">
+                                            <label>Issued Date</label>
+                                            <input type="date" placeholder="Enter your issued date" required>
+                                        </div>
 
-                        <div class="input-field">
-                            <label>Issued Authority</label>
-                            <input type="text" placeholder="Enter issued authority" required>
-                        </div>
+                                        <div class="input-field">
+                                            <label>Expiry Date</label>
+                                            <input type="date" placeholder="Enter expiry date" required>
+                                        </div>
+                                    </div>
 
-                        <div class="input-field">
-                            <label>Issued State</label>
-                            <input type="text" placeholder="Enter issued state" required>
-                        </div>
 
-                        <div class="input-field">
-                            <label>Issued Date</label>
-                            <input type="date" placeholder="Enter your issued date" required>
-                        </div>
+                                </div>
 
-                        <div class="input-field">
-                            <label>Expiry Date</label>
-                            <input type="date" placeholder="Enter expiry date" required>
-                        </div>
-                    </div>
+                                <div class="details address">
+                                    <span class="title">Address Details</span>
 
-                    <button class="nextBtn">
-                        <span class="btnText">Next</span>
-                        <i class="uil uil-navigator"></i>
-                    </button>
-                </div> 
-            </div>
+                                    <div class="fields">
+                                        <div class="input-field">
+                                            <label>Address Type</label>
+                                            <input type="text" placeholder="Permanent or Temporary" required>
+                                        </div>
 
-            <div class="form second">
-                <div class="details address">
-                    <span class="title">Address Details</span>
+                                        <div class="input-field">
+                                            <label>Nationality</label>
+                                            <select name="Nationality" id="nationality">
+                                                <option value="South African">South African</option>
+                                            </select>
+                                        </div>
 
-                    <div class="fields">
-                        <div class="input-field">
-                            <label>Address Type</label>
-                            <input type="text" placeholder="Permanent or Temporary" required>
-                        </div>
+                                        <div class="input-field">
+                                            <label>State</label>
+                                            <input type="text" placeholder="Enter your state" required>
+                                        </div>
 
-                        <div class="input-field">
-                            <label>Nationality</label>
-                            <input type="text" placeholder="Enter nationality" required>
-                        </div>
+                                        <div class="input-field">
+                                            <label>District</label>
+                                            <input type="text" placeholder="Enter your district" required>
+                                        </div>
 
-                        <div class="input-field">
-                            <label>State</label>
-                            <input type="text" placeholder="Enter your state" required>
-                        </div>
+                                        <div class="input-field">
+                                            <label>Block Number</label>
+                                            <input type="number" placeholder="Enter block number" required>
+                                        </div>
 
-                        <div class="input-field">
-                            <label>District</label>
-                            <input type="text" placeholder="Enter your district" required>
-                        </div>
+                                        <div class="input-field">
+                                            <label>Ward Number</label>
+                                            <input type="number" placeholder="Enter ward number" required>
+                                        </div>
+                                    </div>
+                                </div>
 
-                        <div class="input-field">
-                            <label>Block Number</label>
-                            <input type="number" placeholder="Enter block number" required>
-                        </div>
+                                <div class="details family">
+                                    <span class="title">Family Details</span>
 
-                        <div class="input-field">
-                            <label>Ward Number</label>
-                            <input type="number" placeholder="Enter ward number" required>
-                        </div>
-                    </div>
-                </div>
+                                    <div class="fields">
+                                        <div class="input-field">
+                                            <label>Father Name</label>
+                                            <input type="text" placeholder="Enter father name" required>
+                                        </div>
 
-                <div class="details family">
-                    <span class="title">Family Details</span>
+                                        <div class="input-field">
+                                            <label>Mother Name</label>
+                                            <input type="text" placeholder="Enter mother name" required>
+                                        </div>
 
-                    <div class="fields">
-                        <div class="input-field">
-                            <label>Father Name</label>
-                            <input type="text" placeholder="Enter father name" required>
-                        </div>
+                                        <div class="input-field">
+                                            <label>Grandfather</label>
+                                            <input type="text" placeholder="Enter grandfther name" required>
+                                        </div>
 
-                        <div class="input-field">
-                            <label>Mother Name</label>
-                            <input type="text" placeholder="Enter mother name" required>
-                        </div>
+                                        <div class="input-field">
+                                            <label>Spouse Name</label>
+                                            <input type="text" placeholder="Enter spouse name" required>
+                                        </div>
 
-                        <div class="input-field">
-                            <label>Grandfather</label>
-                            <input type="text" placeholder="Enter grandfther name" required>
-                        </div>
+                                        <div class="input-field">
+                                            <label>Father in Law</label>
+                                            <input type="text" placeholder="Father in law name" required>
+                                        </div>
 
-                        <div class="input-field">
-                            <label>Spouse Name</label>
-                            <input type="text" placeholder="Enter spouse name" required>
-                        </div>
+                                        <div class="input-field">
+                                            <label>Mother in Law</label>
+                                            <input type="text" placeholder="Mother in law name" required>
+                                        </div>
+                                    </div>
 
-                        <div class="input-field">
-                            <label>Father in Law</label>
-                            <input type="text" placeholder="Father in law name" required>
-                        </div>
+                                    <div class="buttons">
 
-                        <div class="input-field">
-                            <label>Mother in Law</label>
-                            <input type="text" placeholder="Mother in law name" required>
-                        </div>
+                                        <button type="submit" class="sumbit">
+                                            <span class="btnText">Submit</span>
+                                            <i class="uil uil-navigator"></i>
+                                        </button>
+                                        <button class="nextBtn">
+                                            <span class="btnText">Next</span>
+                                            <i class="uil uil-navigator"></i>
+                                        </button>
+                                    </div>
+                                </div>
+
+
+
+
+                            </div>
+
                     </div>
 
-                    <div class="buttons">
-                        <div class="backBtn">
-                            <i class="uil uil-navigator"></i>
-                            <span class="btnText">Back</span>
-                        </div>
-                        
-                        <button class="sumbit">
-                            <span class="btnText">Submit</span>
-                            <i class="uil uil-navigator"></i>
-                        </button>
-                    </div>
-                </div> 
-            </div>
-        </form>
-    </div>
+                    </form>
             </section>
+            </header>
 
-            <!-- cards -->
-            <div class="cardBox">
-                <div class="cardHeader">
-                    <h2>Applicant Info</h2>
-                </div>
-                <div class="card">
-                    <div>
-                        <div class="numbers">1,504</div>
-                        <div class="cardName">Daily Views</div>                    
-                    </div>
-                    <!-- <div class="iconBx">
-                        <ion-icon name="eye-outline"></ion-icon>
-                    </div> -->
-                </div>
 
-                <div class="card">
-                    <div>
-                        <div class="numbers">1,504</div>
-                        <div class="cardName">Daily Views</div>                    
-                    </div>
-                    <!-- <div class="iconBx">
-                        <ion-icon name="eye-outline"></ion-icon>
-                    </div> -->
-                </div>
-
-                <div class="card">
-                    <div>
-                        <div class="numbers">1,504</div>
-                        <div class="cardName">Daily Views</div>                    
-                    </div>
-                    <!-- <div class="iconBx">
-                        <ion-icon name="eye-outline"></ion-icon>
-                    </div> -->
-                </div>
-
-                <!-- <div class="card">
-                    <div>
-                        <div class="numbers">1,504</div>
-                        <div class="cardName">Daily Views</div>                    
-                    </div>
-                    <div class="iconBx">
-                        <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                </div> -->
-            </div>
-
-            <div class="applications">
-                <!-- student application list -->
-                <div class="recentApplications">
-                    <div class="cardHeader">
-                        <h2>Recent Applications</h2>
-                        <a href="#" class="btn">View All</a>
-                    </div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <td>Name</td>
-                                <td>Price</td>
-                                <td>Payment</td>
-                                <td>Status</td>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td>Star Boy</td>
-                                <td>$1200</td>
-                                <td>Paid</td>
-                                <td><span class="status delivered">Delivered</span></td>
-                            </tr>
-
-                            <tr>
-                                <td>Star Boy</td>
-                                <td>$1200</td>
-                                <td>Paid</td>
-                                <td><span class="status pending">Pending</span></td>
-                            </tr>
-
-                            <tr>
-                                <td>Star Boy</td>
-                                <td>$1200</td>
-                                <td>Paid</td>
-                                <td><span class="status returned">Return</span></td>
-                            </tr>
-
-                            <tr>
-                                <td>Star Boy</td>
-                                <td>$1200</td>
-                                <td>Paid</td>
-                                <td><span class="status progress">In Progress</span></td>
-                            </tr>
-
-                            <tr>
-                                <td>Star Boy</td>
-                                <td>$1200</td>
-                                <td>Paid</td>
-                                <td><span class="status delivered">Delivered</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <!-- New Students -->
-                <div class="recentStudents">
-                    <div class="cardHeader">
-                        <h2>Recent Students</h2>
-                    </div>
-                    <table>
-                        <tr>
-                            <td width="60px">
-                                <div class="imgBx">
-                                    <img src="./images/studentProfilePic.jpg" alt="Student List">
-                                </div>
-                            </td>
-
-                            <td>
-                                <h4>
-                                    Laura<br><span>Ndlovu</span>
-                                </h4>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td width="60px">
-                                <div class="imgBx">
-                                    <img src="./images/studentProfilePic.jpg" alt="Student List">
-                                </div>
-                            </td>
-
-                            <td>
-                                <h4>
-                                    Laura<br><span>Ndlovu</span>
-                                </h4>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td width="60px">
-                                <div class="imgBx">
-                                    <img src="./images/studentProfilePic.jpg" alt="Student List">
-                                </div>
-                            </td>
-
-                            <td>
-                                <h4>
-                                    Laura<br><span>Ndlovu</span>
-                                </h4>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td width="60px">
-                                <div class="imgBx">
-                                    <img src="./images/studentProfilePic.jpg" alt="Student List">
-                                </div>
-                            </td>
-
-                            <td>
-                                <h4>
-                                    Laura<br><span>Ndlovu</span>
-                                </h4>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td width="60px">
-                                <div class="imgBx">
-                                    <img src="./images/studentProfilePic.jpg" alt="Student List">
-                                </div>
-                            </td>
-
-                            <td>
-                                <h4>
-                                    Laura<br><span>Ndlovu</span>
-                                </h4>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td width="60px">
-                                <div class="imgBx">
-                                    <img src="./images/studentProfilePic.jpg" alt="Student List">
-                                </div>
-                            </td>
-
-                            <td>
-                                <h4>
-                                    Laura<br><span>Ndlovu</span>
-                                </h4>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
         </div>
 
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="js/script.js"></script>
     <script>
         // MenuToggle
         let toggle = document.querySelector('.toggle');
         let navigation = document.querySelector('.navigation');
         let main = document.querySelector('.main');
-        
-        toggle.onclick = function() {
+
+        toggle.onclick = function () {
             navigation.classList.toggle('active');
             main.classList.toggle('active');
         }
@@ -507,11 +293,12 @@
         let list = document.querySelectorAll('.navigation li');
         function activeLink() {
             list.forEach((item) =>
-            item.classList.remove('hovered'));
+                item.classList.remove('hovered'));
             this.classList.add('hovered');
         }
         list.forEach((item) =>
-        item.addEventListener('mouseover',activeLink));
+            item.addEventListener('mouseover', activeLink));
     </script>
 </body>
+
 </html>
